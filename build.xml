@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<Module>
+	
+	<GlobalSolutionName>ThirdParty</GlobalSolutionName>
+	<GlobalNamespace>potato</GlobalNamespace>
+
+	<StaticLibrary>
+		<Name>thirdparty_opensubdiv</Name>
+		<SourceRoot>opensubdiv</SourceRoot>
+		<ExportedIncludeDirectory>.</ExportedIncludeDirectory>
+		<ThirdParty>true</ThirdParty>
+		<ThirdPartySourceFile>
+			version.cpp;
+			bfr\faceSurface.cpp;
+			bfr\faceTopology.cpp;
+			bfr\faceVertex.cpp;
+			bfr\hash.cpp;
+			bfr\irregularPatchBuilder.cpp;
+			bfr\parameterization.cpp;
+			bfr\patchTree.cpp;
+			bfr\patchTreeBuilder.cpp;
+			bfr\refinerSurfaceFactory.cpp;
+			bfr\regularPatchBuilder.cpp;
+			bfr\surface.cpp;
+			bfr\surfaceData.cpp;
+			bfr\surfaceFactory.cpp;
+			bfr\surfaceFactoryCache.cpp;
+			bfr\tessellation.cpp;
+			bfr\vertexDescriptor.cpp;
+			far\bilinearPatchBuilder.cpp;
+			far\catmarkPatchBuilder.cpp;
+			far\error.cpp;
+			far\loopPatchBuilder.cpp;
+			far\patchBasis.cpp;
+			far\patchBuilder.cpp;
+			far\patchDescriptor.cpp;
+			far\patchMap.cpp;
+			far\patchTable.cpp;
+			far\patchTableFactory.cpp;
+			far\ptexIndices.cpp;
+			far\stencilBuilder.cpp;
+			far\stencilTable.cpp;
+			far\stencilTableFactory.cpp;
+			far\topologyDescriptor.cpp;
+			far\topologyRefiner.cpp;
+			far\topologyRefinerFactory.cpp;
+			osd\cpuEvaluator.cpp;
+			osd\cpuKernel.cpp;
+			osd\cpuPatchTable.cpp;
+			osd\cpuVertexBuffer.cpp;
+			osd\ompEvaluator.cpp;
+			osd\ompKernel.cpp;
+			osd\tbbEvaluator.cpp;
+			osd\tbbKernel.cpp;
+			sdc\crease.cpp;
+			sdc\typeTraits.cpp;
+			vtr\fvarLevel.cpp;
+			vtr\fvarRefinement.cpp;
+			vtr\level.cpp;
+			vtr\quadRefinement.cpp;
+			vtr\refinement.cpp;
+			vtr\sparseSelector.cpp;
+			vtr\triRefinement.cpp
+		</ThirdPartySourceFile>
+
+		<FilterPlatform include="unused">
+			<ThirdPartySourceFile>
+				osd\clD3D11VertexBuffer.cpp;
+				osd\clEvaluator.cpp;
+				osd\clGLVertexBuffer.cpp;
+				osd\clPatchTable.cpp;
+				osd\clVertexBuffer.cpp;
+				osd\cpuD3D11VertexBuffer.cpp;
+				osd\cpuGLVertexBuffer.cpp;
+				osd\cudaD3D11VertexBuffer.cpp;
+				osd\cudaEvaluator.cpp;
+				osd\cudaGLVertexBuffer.cpp;
+				osd\cudaPatchTable.cpp;
+				osd\cudaVertexBuffer.cpp;
+				osd\d3d11ComputeEvaluator.cpp;
+				osd\d3d11LegacyGregoryPatchTable.cpp;
+				osd\d3d11PatchTable.cpp;
+				osd\d3d11VertexBuffer.cpp;
+				osd\glComputeEvaluator.cpp;
+				osd\glLegacyGregoryPatchTable.cpp;
+				osd\glPatchTable.cpp;
+				osd\glslPatchShaderSource.cpp;
+				osd\glVertexBuffer.cpp;
+				osd\glXFBEvaluator.cpp;
+				osd\hlslPatchShaderSource.cpp
+			</ThirdPartySourceFile>
+		</FilterPlatform>
+		<Dependency>thirdparty_tbb</Dependency>
+	</StaticLibrary>
+
+</Module>
