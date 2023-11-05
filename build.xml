@@ -8,6 +8,7 @@
 		<Name>thirdparty_opensubdiv</Name>
 		<SourceRoot>opensubdiv</SourceRoot>
 		<ExportedIncludeDirectory>.</ExportedIncludeDirectory>
+		<PreprocessorDefines>_USE_MATH_DEFINES</PreprocessorDefines>
 		<ThirdParty>true</ThirdParty>
 		<ThirdPartySourceFile>
 			version.cpp;
